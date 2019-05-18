@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script type="text/javascript">
+        function Person(name,age) {
+            this.name=name;
+            this.age=age;
+        }
+        var p = new Person("Vahid", 31);
+        var q = new Person("Hamid", 40);
+
+        function diff(age1,age2) {
+            var d= age1-age2;
+            return d;
+        }
+
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        document.write("Ekhtelafe sen = " + diff(q.age,p.age));
+    </script>
+</body>

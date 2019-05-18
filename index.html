@@ -4,11 +4,37 @@
     <meta charset="UTF-8">
     <title>JavaScript</title>
     <script type="text/javascript">
-        document.write("Hello");
-        document.write(" How are you?");
+        function hello() {
+            document.write("Hello World");
+        }
+        function test(name, age) {
+            document.write("Hello " + name + "You are " + age + " years old.");
+        }
+        function over() {
+            document.write("Mouse over");
+        }
+        function out(){
+            document.write("Mouse Out");
+        }
+        var linebr = "<br />";
     </script>
 </head>
 <body>
-
+<div onmouseover="over()"><h1>Test Mouse over</h1></div>
+<div onmouseout="out()"><h1>Test Mouse out</h1></div>
+    <script type="text/javascript">
+        alert("Yohoooo");
+        document.write("Hello ");
+        document.writeln(" How old are you? \"Age= \"");
+        var age= 18;
+        document.write(linebr);
+        document.write("What's your name: ");
+        var name="Vahid Fazelinia";
+        document.write(linebr);
+        document.write("What's your Age: ");
+        document.write(linebr);
+    </script>
+<input type="button" onclick="test(name,age)" value="click kon!">
+<input type="button" onclick="hello()" value="Click me!">
 </body>
 </html>
