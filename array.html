@@ -14,7 +14,7 @@
         پشتیبانی از جاوا اسکریپت ندارد.
     </noscript>
 </head>
-<body style="text-align: right; direction: rtl">
+<body>
     <script type="text/javascript">
         for(var i = 0 ; i< 3 ; i++)
         {
@@ -22,11 +22,15 @@
         }
         // Join is a function that display the contents of an array and use a character to separate each other
         document.write(name2.join(" - ") + "<br />"); // each character can be used, predefined one is ","
-        document.write(name2.concat(age2));
+        document.write(name2.concat(age2) + "<br /><br /><br />");
         //name2.pop(); //POP from end of the array.
         // name2.reverse(); //Reverse the array.
         // name2.push("Mina", "Maryam"); //Push to the end of the array.
         // name2.sort(); //Sort the array as a Desc one.
+
+        // Get a info from users
+        var question = prompt("Who are you?", "");
+        document.write(question);
 
     </script>
 </body>
