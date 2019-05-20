@@ -9,6 +9,7 @@
             var hours = now.getHours();
             var min = now.getMinutes();
             var sec = now.getSeconds();
+            document.body.innerHTML = "";
             document.write("The time is: " + hours + ":" + min + ":" + sec);
         }
 
@@ -19,7 +20,8 @@
 </head>
 <body>
     <script type="text/javascript">
-        date1();
+        // date1();
+        setInterval("date1();", 1000);
     </script>
 </body>
 </html>
