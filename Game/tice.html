@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>تاس</title>
+    <style type="text/css">
+        .ticeHide{
+            display: none;
+        }
+        .ticeShow{
+            display: block;
+        }
+    </style>
+    <script type="text/javascript">
+        function tice() {
+            var t = Math.random()*6+1;
+             t = Math.floor(t);
+            alert(t);
+            if (t == 1)
+            {
+                document.getElementById("dice1").src="pic/dice1.jpg";
+                document.getElementById('dice1').classList.remove('ticeHide');
+            }
+            else if (t == 2)
+            {
+                document.getElementById("dice2").src="pic/dice2.jpg";
+                document.getElementById('dice2').classList.remove('ticeHide');
+            }
+            else if (t == 3)
+            {
+                document.getElementById("dice3").src="pic/dice3.jpg";
+                document.getElementById('dice3').classList.remove('ticeHide');
+            }
+            else if (t == 4)
+            {
+                document.getElementById("dice4").src="pic/dice4.jpg";
+                document.getElementById('dice4').classList.remove('ticeHide');
+            }
+            else if (t == 5)
+            {
+                document.getElementById("dice5").src="pic/dice5.jpg";
+                document.getElementById('dice5').classList.remove('ticeHide');
+            }
+            else
+            {
+                document.getElementById("dice6").src="pic/dice6.jpg";
+                document.getElementById('dice6').classList.remove('ticeHide');
+            }
+        }
+    </script>
+    <noscript>
+        پشتیبانی از جاوا اسکریپت ندارد.
+    </noscript>
+</head>
+<body>
+    <form name="test">
+        <input type="button" value="Click me!" onclick="tice();">
+        <script type="text/javascript">
+
+        </script>
+
+        <img class="ticeHide" id="dice1" src="" />
+        <img class="ticeHide" id="dice2" src="" />
+        <img class="ticeHide" id="dice3" src="" />
+        <img class="ticeHide" id="dice4" src="" />
+        <img class="ticeHide" id="dice5" src="" />
+        <img class="ticeHide" id="dice6" src="" />
+    </form>
+</body>
+</html>
