@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>فرم ها</title>
+    <script type="text/javascript">
+        function validator() {
+            if (document.sg.checkbox.checked)
+            {
+                alert("Yessss");
+            } else {
+                alert("No");
+            }
+        }
+    </script>
+    <noscript>
+        پشتیبانی از جاوا اسکریپت ندارد.
+    </noscript>
+</head>
+<body>
+<form name="sg">
+    Username: <input type="text" name="username"> <br /><br />
+    Password:&nbsp <input type="password" name="password"> <br /><br />
+    checked:  <input type="checkbox" name="checkbox"> <br /><br />
+              <input type="button" value="Submit" name="submit" onclick="validator();"><br /><br />
+</form>
+<script type="text/javascript">
+    var x = document.forms[0].length;
+    var y= document.forms[0].elements[0].name;
+    document.write(x);
+    document.write("<br /><br />")
+    document.write(y);
+</script>
+</body>
+</html>
